@@ -43,8 +43,9 @@ The following exit values shall be returned:
 ### Dependencies
 
 * A POSIX `/bin/sh`
-* `cut`
-* `grep`
+  * `test`
+  * `cut`
+  * `grep`
 * `apt-get`
 
 ### Testing
