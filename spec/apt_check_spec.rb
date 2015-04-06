@@ -1,6 +1,6 @@
 require 'serverspec'
 require 'docker'
-require 'pry'
+Excon.defaults[:ssl_verify_peer] = false
 
 describe 'apt-check.sh' do
 
@@ -192,8 +192,8 @@ describe 'apt-check.sh' do
       teardown
     end
 
-    let(:updates)          { 14 }
-    let(:security_updates) { 9 }
+    let(:updates)          { 18 }
+    let(:security_updates) { 0 }
 
     it_behaves_like 'apt-check'
 
